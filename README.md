@@ -36,19 +36,24 @@ note: only need to set up the environment once
 
 
 ## Structure
-.
-├── Makefile
-├── OccupationalEmploymentandWageStatistics.csv
-├── README.md
-├── __pycache__
-│   ├── describe_statistics.cpython-311.pyc
-│   └── test_stat.cpython-311-pytest-7.4.2.pyc
-├── ids706_project9.py
-├── main.py
-├── ouput.png
-├── output.log
-├── requirements.txt
-└── test_main.py
+1. `.devcontainer` includes a Dockerfile and devcontainer.json. The files in this container specify how the project can be set up.
+
+2. `.github` includes the CI/CD settings
+
+3. `ids706_project9.ipynb` includes all the operations related with SQL
+
+4. [Occupational Employment and Wage Statistics.csv](https://raw.githubusercontent.com/nogibjj/ids706_project9_ll442/4912522c139e982753fcd51a5226ad58ab5c3195/OccupationalEmploymentandWageStatistics.csv) is the dataset we use
+
+5. `Makefile` includes all the make settings for this project
+
+6. `main.py` is the file to be tested
+
+7. `test_main.py` is the test file for `main.py`
+
+8. All packages needed for this project are in `requirements.txt`
+
+9. `.gitignore` includes all the files that do not want to be tracked by github
+
 
 
 ## CI/CD
